@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  svg {
+    border: 1px solid #ccc;
+    background: linear-gradient(90deg, #ffefd5, #ffe4e1);
+    margin: 20px auto;
+    display: block;
+  }
+  
+  circle {
+    transition: transform 0.3s ease, fill 0.3s ease;
+  }
+  
+  rect {
+    transition: transform 0.3s ease, fill 0.3s ease;
+  }
+  
+  .line {
+    stroke-width: 2;
+    stroke: #333;
+    animation: dash 2s linear infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dasharray: 10, 100;
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dasharray: 10, 100;
+      stroke-dashoffset: -100;
+    }
+  }
+  
